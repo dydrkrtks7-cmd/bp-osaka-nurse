@@ -1,0 +1,210 @@
+
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>개인정보 보호 전문 포트폴리오 저널</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&family=Noto+Sans+KR:wght@300;400;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #ffffff;
+      --text-color: #0f172a;
+      --accent-color: #10b981;
+      --muted-color: #64748b;
+      --border-color: #e2e8f0;
+      --font-swiss: 'Inter', 'Noto Sans KR', sans-serif;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body {
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      font-family: var(--font-swiss);
+      line-height: 1.7;
+      letter-spacing: -0.01em;
+      padding: 0 24px;
+    }
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 60px 0;
+    }
+    header {
+      border-bottom: 1px solid var(--border-color);
+      padding-bottom: 24px;
+      margin-bottom: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+    .logo {
+      font-size: 1.25rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      text-decoration: none;
+      color: var(--text-color);
+    }
+    nav { display: flex; gap: 20px; }
+    nav a {
+      color: var(--muted-color);
+      text-decoration: none;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      font-weight: 600;
+      transition: color 0.2s ease;
+    }
+    nav a:hover { color: var(--accent-color); }
+    main { padding-bottom: 60px; }
+    .meta-tag {
+      font-size: 0.75rem;
+      font-family: monospace;
+      text-transform: uppercase;
+      color: var(--accent-color);
+      font-weight: 700;
+      letter-spacing: 0.1em;
+      margin-bottom: 16px;
+      display: inline-block;
+    }
+    h1 {
+      font-size: 2.5rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.03em;
+      color: var(--text-color);
+      margin-bottom: 32px;
+    }
+    .content {
+      font-size: 1.05rem;
+      color: var(--text-color);
+      margin-bottom: 48px;
+      font-weight: 300;
+    }
+    .content p { margin-bottom: 20px; }
+    .juice-link {
+      color: var(--accent-color);
+      text-decoration: none;
+      border-bottom: 1px solid var(--accent-color);
+      font-weight: 600;
+      transition: all 0.2s ease;
+    }
+    .juice-link:hover {
+      background-color: rgba(16, 185, 129, 0.05);
+    }
+    .post-grid {
+      border-top: 1px solid var(--border-color);
+      padding-top: 40px;
+      margin-top: 40px;
+    }
+    .grid-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted-color);
+      margin-bottom: 24px;
+    }
+    .posts-list {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+    .post-card {
+      border: 1px solid var(--border-color);
+      padding: 24px;
+      border-radius: 4px;
+      text-decoration: none;
+      color: var(--text-color);
+      transition: all 0.2s ease;
+    }
+    .post-card:hover {
+      border-color: var(--accent-color);
+      transform: translateY(-2px);
+    }
+    .post-card h3 {
+      font-size: 1.15rem;
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .post-card p {
+      font-size: 0.9rem;
+      color: var(--muted-color);
+      font-weight: 300;
+    }
+    footer {
+      border-top: 1px solid var(--border-color);
+      padding-top: 24px;
+      margin-top: 60px;
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.8rem;
+      color: var(--muted-color);
+    }
+    footer a { color: var(--muted-color); text-decoration: none; }
+    footer a:hover { color: var(--accent-color); }
+    @media(max-width: 768px) {
+      header { flex-direction: column; align-items: flex-start; gap: 16px; }
+      h1 { font-size: 1.8rem; }
+    }
+  </style>
+<meta property="og:image" content="og-image.svg">
+<link rel="icon" type="image/svg+xml" href="favicon.svg">
+</head>
+<body>
+  <div class="container">
+    <header>
+      <a href="/" class="logo">JOURNAL</a>
+      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
+    </header>
+    <main>
+      <div class="meta-tag">SWISS ACCENTED GRID SYSTEM</div>
+      <h1>개인정보 보호 전문 포트폴리오 저널</h1>
+      <div class="content">
+        웰컴 투 <strong>개인정보 보호</strong> 정보 아카이브 저널입니다. 본 공간은 개인정보 보호 분야의 깊이 있는 전문 지식과 실전 가이드, 그리고 유용한 관련 정보들을 꼼꼼하게 집대성한 고품격 PBN 정보 허브입니다.<br><br>아래의 엄선된 에디토리얼 아카이브 리스트를 통해 다양한 인사이트를 확인하시고 삶과 비즈니스의 격을 넓혀보시기 바랍니다.
+      </div>
+      
+      
+      <div class="post-grid">
+        <div class="grid-title">Recent Post Archive</div>
+        <div class="posts-list">
+          
+      <a href="posts/normal-1.html" class="post-card">
+        <h3>개인정보 보호: 스팸 메일 차단용 일회용 주소</h3>
+        <p>온라인 서비스 가입과 다양한 웹사이트 이용이 필수적인 디지털 시대에 개인정보 보호를 위한 첫 번째 방어선은 바로 일회용 이메일 주소를 현명하게 활용하는 것입니다. 거의 모든 웹사이트가 가입 시 이메일 인증을 요구하며, 이 과정에서 수집된 이메일 주소는 마케팅 대행사로 ...</p>
+      </a>
+    
+
+      <a href="posts/normal-2.html" class="post-card">
+        <h3>개인정보 보호: 비밀번호 관리 프로그램 추천</h3>
+        <p>매년 수없이 발생하는 대형 포털과 웹사이트의 해킹 사고 속에서 내 개인정보와 자산을 완벽하게 안전하게 지키는 가장 확실한 예방책은 강력한 비밀번호 관리 프로그램을 도입하는 것입니다. 대다수의 인터넷 이용자들이 기억하기 쉽다는 이유로 여러 사이트에서 동일하거나 유사한 비...</p>
+      </a>
+    
+
+      <a href="posts/juice-1.html" class="post-card">
+        <h3>개인정보 보호 마니아들에게 추천하는 정수기 렌탈 가격 비교 알짜배기 이용 가이드</h3>
+        <p>나날이 지능화되는 피싱과 해킹 위협 속에서 개인정보 보호 기술을 깊이 탐구하고 적용하는 보안 마니아분들이라면, 일상의 안전만큼이나 실생활 소비 영역에서 발생하는 개인 정보의 흐름도 꼼꼼하게 통제하고 효율을 최적화해야 합니다. 특히 우리가 일상에서 접하는 가전 및 생활 ...</p>
+      </a>
+    
+
+      <a href="posts/juice-2.html" class="post-card">
+        <h3>개인정보 보호 마니아들에게 추천하는 정수기 렌탈 가격 비교 알짜배기 이용 가이드</h3>
+        <p>디지털 세상에서 완벽한 프라이버시를 지키기 위해 개인정보 보호 프로토콜을 적극 실천하는 분들은 모든 일상 인프라의 투명성과 정보의 안전을 최우선으로 생각합니다. 이는 삶의 질을 높이는 오프라인 문화 생활이나 노래방 같은 여가 시설을 이용할 때도 고스란히 적용되는 철학입...</p>
+      </a>
+    
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div>&copy; 2026 JOURNAL. ALL RIGHTS RESERVED.</div>
+      <div>
+        <a href="sitemap.xml">SITEMAP</a> | 
+        <a href="#">PRIVACY</a> | 
+        <a href="#">DISCLAIMER</a>
+      </div>
+    </footer>
+  </div>
+</body>
+</html>
