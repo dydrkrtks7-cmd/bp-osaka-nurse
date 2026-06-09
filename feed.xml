@@ -1,20 +1,48 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
 <channel>
-  <title><![CDATA[구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호]]></title>
+  <title><![CDATA[크롤러 케어]]></title>
   <link>https://nurse-kyujin.online</link>
-  <description><![CDATA[구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 크롤러 케어 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-  <language>ko-KR</language>
-  <pubDate>Thu, 28 May 2026 13:05:07 GMT</pubDate>
-  <lastBuildDate>Thu, 28 May 2026 13:05:07 GMT</lastBuildDate>
+  <description><![CDATA[크롤러 케어 - 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 관련 최신 소식 및 가이드]]></description>
+  <language>ko</language>
+  <pubDate>Tue, 09 Jun 2026 05:56:18 GMT</pubDate>
+  <lastBuildDate>Tue, 09 Jun 2026 05:56:18 GMT</lastBuildDate>
   <atom:link href="https://nurse-kyujin.online/feed.xml" rel="self" type="application/rss+xml" />
   
     <item>
-      <title><![CDATA[구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 - 공식 홈페이지 오픈 안내]]></title>
-      <link>https://nurse-kyujin.online/</link>
-      <guid isPermaLink="true">https://nurse-kyujin.online/</guid>
-      <description><![CDATA[구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 크롤러 케어 관련 최신 뉴스, 서비스 안내, 리얼 후기 정보를 신속하게 전달하는 공식 RSS 피드입니다.]]></description>
-      <pubDate>Thu, 28 May 2026 13:05:07 GMT</pubDate>
+      <title><![CDATA[구글 봇이 다 못 찾아낸 2022 년 치발기 로트와 분유 소화 문제의 교차점]]></title>
+      <link>https://nurse-kyujin.online/posts/field_note-005-10t7w6o.html</link>
+      <guid isPermaLink="true">https://nurse-kyujin.online/posts/field_note-005-10t7w6o.html</guid>
+      <description><![CDATA[## 관찰 기록: 병실에서의 미세한 신호 저는 2022 년 중반에 특정 실리콘 유아용 치발기 모델의 리콜 건을 진료실에서 몇 번 마주치곤 했습니다. 그중에서도 로트 넘버가 **MB-2022104**인 제품은 프탈레이트 농도가 일반 규격보다 1.5 배 이상 높게 검출된 ]]></description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[구글 봇이 맛을 못 먹는 이유, 밀키트 제조사 변경 전후 크롤러 케어 가이드]]></title>
+      <link>https://nurse-kyujin.online/posts/guide-004-10t7w6o.html</link>
+      <guid isPermaLink="true">https://nurse-kyujin.online/posts/guide-004-10t7w6o.html</guid>
+      <description><![CDATA[사실 같은 제품명이라도 제조사의 내부 코드가 조금만 다르면 맛이 확 달라지죠. 예전에는 `Batch-2023-Spring`으로 표기되던 밀키트가 갑자기 `Version-Fall`로 바뀐 사례를 본 적이 있으신가요? GS25와 CU 에서 동시에 출시한 특정 디저트에서도 ]]></description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[구글 봇이 분유 라벨을 읽는 법, 마치 크롤 버짓 밀착 간호하듯]]></title>
+      <link>https://nurse-kyujin.online/posts/major_compare-001-10t7w6o.html</link>
+      <guid isPermaLink="true">https://nurse-kyujin.online/posts/major_compare-001-10t7w6o.html</guid>
+      <description><![CDATA[어차피 2023 년부터 생산된 제품들 보면, 제조사마다 DHA 함량 표기 기준이 미세하게 달라졌는데. 유럽 내수용과 한국 수입용을 비교해 볼 때, 같은 로트라도 규격서 버전이 다르다 보니 실제 수치는 차이가 날 수밖에 없다. `EU FIC Rev. B (2023)` 이]]></description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[크롤링 버짓만큼도 소중하지 않은 정수기 필터 교체 주기]]></title>
+      <link>https://nurse-kyujin.online/posts/myth-003-10t7w6o.html</link>
+      <guid isPermaLink="true">https://nurse-kyujin.online/posts/myth-003-10t7w6o.html</guid>
+      <description><![CDATA[대부분의 셔츠룸 사장님들은 `dE2 에러코드`를 보자마자 필터 교체를 떠올린다. 마치 구글 봇이 SEO 점수가 낮다고 해서 웹사이트 전체를 리빌딩하듯, 기계 고장일테니까 새 부품으로 갈아치우는 게 맞다는 식이다. 어차피 안 될 텐데, 그러니 그냥 비용이 들더라도 확실한]]></description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
+    </item>
+    <item>
+      <title><![CDATA[구글 봇이 분유 성분표를 파고들듯 2023 년 분유 DHA 기준 차이와 크롤링 버짓 관리법]]></title>
+      <link>https://nurse-kyujin.online/posts/qa-002-10t7w6o.html</link>
+      <guid isPermaLink="true">https://nurse-kyujin.online/posts/qa-002-10t7w6o.html</guid>
+      <description><![CDATA[## 수입상 시선으로 본 2023 년 DHA 기준 변경사정어차피 아이는 뭐든 먹으니 성분표 숫자에 집착하기보다, 제조 연도를 봐야 해. 2023 년부터 한국 식품의약처에서 분유 라벨링 규정이 조금 달라졌거든. 특히 프리미엄 제품과 일반 제품의 DHA 함량 기준이 5mg]]></description>
+      <pubDate>Tue, 09 Jun 2026 00:00:00 GMT</pubDate>
     </item>
 </channel>
 </rss>
