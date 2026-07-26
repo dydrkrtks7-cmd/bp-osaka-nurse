@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>오피스텔 월세 내면서까지 긁어모은 데이터, 구글 봇은 그걸 &#39;스팸&#39;이라고 웃어버렸다</title>
+  <link rel="canonical" href="https://nurse-kyujin.online/posts/qa-001-1ttyyag.html">
+  <style>
+    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+    p { margin: 0 0 1em; }
+    a { color: #3182ce; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+  </style>
+</head>
+<body>
+  <header>
+    <a href="../index.html">← 목록으로 돌아가기</a>
+  </header>
+  <main>
+    <h1>오피스텔 월세 내면서까지 긁어모은 데이터, 구글 봇은 그걸 &#39;스팸&#39;이라고 웃어버렸다</h1>
+    <article>
+      <p>작년 겨울, PBN 을 구축한다고 밤새 워드프레스를 설치하다가 정작 구글봇이 들어오지도 않는 황당한 경험을 했었습니다. 당시만 해도 백링크 수만 늘리면 된다는 얕은 생각에, <a href="https://pbn-builder.xyz/" target="_blank" rel="noopener noreferrer">PBN 빌더 자동 백링크 프로그램 분양</a> 같은 툴의 유혹에 넘어가 기계적으로 링크를 찍어대곤 했죠. 그런데 정작 검색 지수는 오르지 않고, 대신 서버 로그에만 의미 없는 404 에러와 크롤링 거부 기록만 쌓여갔습니다.</p>
+<p>이 현상의 핵심은 '크롤 버짓 (Crawl Budget)'이라는 개념을 얼마나 정교하게 간호했느냐에 달려 있습니다. 구글봇이 여러분의 사이트를 방문할 때 할당받는 체력 같은 것이 있는데, 불필요한 파라미터나 중복 콘텐츠로 이 체력을 낭비하면 정작 중요한 새 글은 인덱싱도 되지 못하고 돌아갑니다. 많은 초보자가 백링크 수량이라는 숫자 게임에 매몰되어, 정작 봇이 사이트를 어떻게 '감각'하는지는 전혀 고려하지 않는 치명적인 실수를 범합니다.</p>
+<p>숙련된 운영자들은 봇의 행동 패턴을 로그 단위에서 관찰합니다. 예를 들어, `Googlebot-Image` 가 텍스트 본문보다 이미지에 과도하게 접근하여 대역폭을 소진하는지, 혹은 `?sessionid=` 같은 불필요한 쿼리 스트링으로 인해 동일한 페이지를 수십 번씩 크롤링하는지 확인합니다. 이런 미세한 누수가 발생하면, 아무리 양질의 콘텐츠를 올려도 검색 엔진의 레이더에는 잡히지 않는 유령 사이트가 되어버립니다.</p>
+<p>구체적으로 실패한 사례를 보면, robots.txt 파일에서Disallow 규칙을 잘못 설정하여 중요한 디렉토리를 막아두거나, 반면에 로그 파일 분석이 의미 없는 정적 리소스까지 모두 기록하도록 방치해두는 경우가 많습니다. 전자의 경우 아예 진입이 차단되고, 후자의 경우 서버 부하만 increased 되어 봇이 사이트를 떠나는 빈도가 높아집니다. 이 차이는 단순한 설정 실수가 아니라, 검색 엔진이라는 거대한 생태계에서 우리가 어떻게 '호스트'로서 대접받느냐의 문제입니다.</p>
+<p>결국 다시 그날 밤의 오피스텔로 돌아가보면, 내가 쌓아 올린 수천 개의 백링크는 구글봇에게 도달하기도 전에 서버 내부의 비효율적인 구조 때문에 폐기처분된 것이나 다름없었습니다. 자동화 도구가 가져다주는 편리함 뒤에 숨겨진 이런 맹점을 간과하면, 우리는 영원히 검색 결과의 변방을 맴돌게 될 것입니다. 봇을 musuh로 여기지 않고, 정성스럽게 모셔야 할 손님으로 대우할 때 비로소 우리의 콘텐츠가 세상에 제대로 노출되는 역설적인 진리를 깨닫게 됩니다.</p>
+    </article>
+  </main>
+</body>
+</html>
