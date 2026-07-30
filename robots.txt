@@ -2,4 +2,5 @@ User-agent: *
 Allow: /
 
 Sitemap: https://nurse-kyujin.online/sitemap.xml
+Sitemap: https://nurse-kyujin.online/sitemap-pages.xml
 Sitemap: https://nurse-kyujin.online/sitemap-index.xml
