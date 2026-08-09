@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>구글 봇 크롤링은 네가 생각하는 것보다 훨씬 덜 해준다 — 을지로에서 진료하는 스파이더 로그 분석가의 사설</title>
-  <link rel="canonical" href="https://nurse-kyujin.online/posts/guide-001-1yk1lgg.html">
-  <style>
-    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
-    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
-    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
-    p { margin: 0 0 1em; }
-    a { color: #3182ce; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>구글 봇 크롤링은 네가 생각하는 것보다 훨씬 덜 해준다 — 을지로에서 진료하는 스파이더 로그 분석가의 사설</title>
+ <link rel="canonical" href="https://nurse-kyujin.online/posts/guide-001-1yk1lgg.html">
+ <style>
+ body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+ h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+ h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+ h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+ p { margin: 0 0 1em; }
+ a { color: #3182ce; text-decoration: none; }
+ a:hover { text-decoration: underline; }
+ </style>
   <meta property="og:url" content="https://nurse-kyujin.online/posts/guide-001-1yk1lgg.html">
   <meta property="og:title" content="구글 봇 크롤링은 네가 생각하는 것보다 훨씬 덜 해준다 — 을지로에서 진료하는 스파이더 로그 분석가의 사설">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <header>
-    <a href="../index.html">← 목록으로 돌아가기</a>
-  </header>
-  <main>
-    <h1>구글 봇 크롤링은 네가 생각하는 것보다 훨씬 덜 해준다 — 을지로에서 진료하는 스파이더 로그 분석가의 사설</h1>
-    <article>
-      <p>380,000개 URL을 가진 쇼핑몰이 실제로 구글에 색인된 페이지는 54,720개. 전체의 14.4%. 서버에 올려진 모든 페이지가 구글bot의 색인 대상이라는 착각에서 출발하는 순간, 크롤링 예산은 이미 새고 있다.</p>
+ <header>
+ <a href="./index.html">← 목록으로 돌아가기</a>
+ </header>
+ <main>
+ <h1>구글 봇 크롤링은 네가 생각하는 것보다 훨씬 덜 해준다 — 을지로에서 진료하는 스파이더 로그 분석가의 사설</h1>
+ <article>
+ <p>380,000개 URL을 가진 쇼핑몰이 실제로 구글에 색인된 페이지는 54,720개. 전체의 14.4%. 서버에 올려진 모든 페이지가 구글bot의 색인 대상이라는 착각에서 출발하는 순간, 크롤링 예산은 이미 새고 있다.</p>
 <p>구조적으로 생각해라. 구글bot은 네 사이트 전체를 하루에 다 긁어가지 않는다. 서버 로그에서 확인 가능한 사실이다. 도메인 권한과 콘텐츠 신뢰도에 따라 배정되는 '시간 쿼터' 안에서 선택적으로 크롤링한다. 이 배정량이 바로 크롤링 예산이고, 이걸 진단하는 과정은 일정한 분기 구조를 따른다.</p>
 <h2>1단계: 크롤링 예산이 정말 소진됐는지부터 확인</h2>
 <p>서버 로그를 열어라. access.log에서 Googlebot의 User-Agent 필터링 결과를 보면, 하루 크롤링 요청 수를 확인할 수 있다. 요청 수가 1,000 미만이면 권한 문제고, 5,000 이상인데도 색인이 안 되면 다른 병목이다.</p>
@@ -45,7 +45,7 @@
 <h2>단기 vs 장기: 결과를 구분해야 산다</h2>
 <p>robots.txt 수정이나 sitemap 재생성은 3~7일 내에 색인 수 변화가 관찰된다. 빠르게 움직여야 한다. 도메인 권한 구축은 수개월이 걸린다.</p>
 <p>결과적으로 네 사이트가 1년차 도메인에 백링크 10개 미만, 페이지 수 800개 중 400개 이상이 얇은 콘텐츠라면, 이 상태에서 크롤링 예산을 최적화하는 건 의미가 희박하다. 기초 권한부터 쌓아야 한다. 구조부터 새로 짜야 한다면, <a href="https://pbn-builder.xyz/" target="_blank" rel="noopener noreferrer">PBN 빌더 자동 백링크 프로그램 분양</a> 같은 도구로 기반부터 다시 잡는 게 시간 대비 효율적이다. 어차피 제자리걸음할 시간이 있으면, 차라리 뒤로 물러서서 다시 시작해라.</p>
-    </article>
-  </main>
+ </article>
+ </main>
 </body>
 </html>

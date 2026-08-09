@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>구글봇 밥값하게 만드는 법, 니가 아는 그거 다 헛소리야</title>
-  <link rel="canonical" href="https://nurse-kyujin.online/posts/myth-002-9oj5si.html">
-  <style>
-    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
-    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
-    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
-    p { margin: 0 0 1em; }
-    a { color: #3182ce; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>구글봇 밥값하게 만드는 법, 니가 아는 그거 다 헛소리야</title>
+ <link rel="canonical" href="https://nurse-kyujin.online/posts/myth-002-9oj5si.html">
+ <style>
+ body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+ h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+ h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+ h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+ p { margin: 0 0 1em; }
+ a { color: #3182ce; text-decoration: none; }
+ a:hover { text-decoration: underline; }
+ </style>
   <meta property="og:url" content="https://nurse-kyujin.online/posts/myth-002-9oj5si.html">
   <meta property="og:title" content="구글봇 밥값하게 만드는 법, 니가 아는 그거 다 헛소리야">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <header>
-    <a href="../index.html">← 목록으로 돌아가기</a>
-  </header>
-  <main>
-    <h1>구글봇 밥값하게 만드는 법, 니가 아는 그거 다 헛소리야</h1>
-    <article>
-      <p>샴푸 향이 코끝을 스칠 때쯤 깨달았다. 이번 달도 글 다섯 개 올렸는데 색인 생성된 건 고작 두 개. 서치콘솔에 찍힌 숫자 보면서 헛웃음밖에 안 나오더라. 크롤 예산? 그런 거 신경 쓸 단계나 되는지도 모르겠고. 근데 이거, 내가 모르는 뭔가가 분명히 있다는 생각이 들었다.</p>
+ <header>
+ <a href="./index.html">← 목록으로 돌아가기</a>
+ </header>
+ <main>
+ <h1>구글봇 밥값하게 만드는 법, 니가 아는 그거 다 헛소리야</h1>
+ <article>
+ <p>샴푸 향이 코끝을 스칠 때쯤 깨달았다. 이번 달도 글 다섯 개 올렸는데 색인 생성된 건 고작 두 개. 서치콘솔에 찍힌 숫자 보면서 헛웃음밖에 안 나오더라. 크롤 예산? 그런 거 신경 쓸 단계나 되는지도 모르겠고. 근데 이거, 내가 모르는 뭔가가 분명히 있다는 생각이 들었다.</p>
 <p>그래서 한 달 동안 미친놈처럼 서버 로그만 들여다봤다. 구글봇이 우리 사이트를 어떻게 기어다니는지 낱낱이 까보기로 한 거다. 지루한 얘기지만 좀 들어봐라. 너도 아마 같은 구덩이에 빠져있을 확률이 높으니까.</p>
 <p>## 구글봇은 니가 생각하는 것만큼 바보가 아니다</p>
 <p>통념 하나 깨고 가자. 사람들이 흔히 "구글봇한테 중요한 페이지만 크롤링하라고 지시해야 한다"고 말한다. robots.txt로 막고, 사이트맵으로 유도하고, 내부 링크로 길을 닦아주면 봇이 순순히 따라올 거라고. 근데 이거 완전 개소리다.</p>
@@ -39,7 +39,7 @@
 <p>구글봇 방문 주기를 분석하다 보니 재미있는 패턴이 나타났다. 화요일과 목요일에 집중적으로 방문하고, 주말에는 거의 멈춘다. 이건 업종마다 다른데, 뉴스 사이트는 매일 수백 번 오고, 일반 블로그는 주 3회 정도가 평균이다. 내 사이트는 주 5회 정도였는데, 이게 좋은 건지 나쁜 건지 한참을 고민했다.</p>
 <p>결론부터 말하면 방문 횟수보다 중요한 건 "크롤 깊이"다. 한 번 왔을 때 몇 개의 페이지를 긁어가냐는 거지. 내 경우 초기에는 3~4페이지에 그쳤는데, 외부 링크가 생긴 이후로 한 번 방문할 때 15페이지씩 긁어가기 시작했다. 이 차이가 진짜다. 지수가 늘고 노출이 올라가는 건 방문 횟수 때문이 아니고, 이 깊이 값 때문이었다.</p>
 <p>아까 언급한 그 백링크 프로그램 얘기가 여기서 나온다. 사실 나도 이런 거에 엄청 회의적인 사람인데, 우연히 <a href="https://pbn-builder.xyz/faq.html" target="_blank" rel="noopener noreferrer">PBN 빌더 자동 백링크 프로그램 분양</a> 페이지를 보게 됐다. 거기서 설명하는 크롤링 유도 메커니즘이 내가 로그에서 확인한 패턴과 꽤 비슷하더라고. 구글봇이 외부 링크를 발견했을 때 보이는 행동 변화를 정확히 찔러놓은 느낌이랄까. 물론 나는 돈 없어서 안 써봤다. 그냥 참고</p>
-    </article>
-  </main>
+ </article>
+ </main>
 </body>
 </html>

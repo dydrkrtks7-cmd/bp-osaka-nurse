@@ -1,32 +1,32 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>크롤 버짓 다 태운 뒤에야 깨달은 것, 봇은 네 글 따윈 읽지 않는다</title>
-  <link rel="canonical" href="https://nurse-kyujin.online/posts/qa-001-icuoq.html">
-  <style>
-    body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
-    h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
-    h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
-    h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
-    p { margin: 0 0 1em; }
-    a { color: #3182ce; text-decoration: none; }
-    a:hover { text-decoration: underline; }
-  </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>크롤 버짓 다 태운 뒤에야 깨달은 것, 봇은 네 글 따윈 읽지 않는다</title>
+ <link rel="canonical" href="https://nurse-kyujin.online/posts/qa-001-icuoq.html">
+ <style>
+ body { font-family: sans-serif; line-height: 1.8; max-width: 800px; margin: 40px auto; padding: 0 20px; color: #333; }
+ h1 { font-family: serif; color: #111; margin-bottom: 0.5em; }
+ h2 { font-size: 1.4em; margin: 1.5em 0 0.5em; color: #222; }
+ h3 { font-size: 1.15em; margin: 1.2em 0 0.4em; color: #444; }
+ p { margin: 0 0 1em; }
+ a { color: #3182ce; text-decoration: none; }
+ a:hover { text-decoration: underline; }
+ </style>
   <meta property="og:url" content="https://nurse-kyujin.online/posts/qa-001-icuoq.html">
   <meta property="og:title" content="크롤 버짓 다 태운 뒤에야 깨달은 것, 봇은 네 글 따윈 읽지 않는다">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">
 </head>
 <body>
-  <header>
-    <a href="../index.html">← 목록으로 돌아가기</a>
-  </header>
-  <main>
-    <h1>크롤 버짓 다 태운 뒤에야 깨달은 것, 봇은 네 글 따윈 읽지 않는다</h1>
-    <article>
-      <p>월 유입 12만이던 사이트가 3개월 만에 4만대로 꺾였을 때, 나는 서치콘솔의 색인 생성 오류 보고서부터 열었다. 거기엔 중복 파라미터 URL이 1,200개 쌓여 있었고, 정작 내가 공들여 만든 핵심 페이지 60%는 색인이 안 되어 있었다. 서버 로그조차 한 번도 안 뒤져본 상태였으니, 봇이 언제부터 안 오기 시작했는지조차 몰랐다.</p>
+ <header>
+ <a href="./index.html">← 목록으로 돌아가기</a>
+ </header>
+ <main>
+ <h1>크롤 버짓 다 태운 뒤에야 깨달은 것, 봇은 네 글 따윈 읽지 않는다</h1>
+ <article>
+ <p>월 유입 12만이던 사이트가 3개월 만에 4만대로 꺾였을 때, 나는 서치콘솔의 색인 생성 오류 보고서부터 열었다. 거기엔 중복 파라미터 URL이 1,200개 쌓여 있었고, 정작 내가 공들여 만든 핵심 페이지 60%는 색인이 안 되어 있었다. 서버 로그조차 한 번도 안 뒤져본 상태였으니, 봇이 언제부터 안 오기 시작했는지조차 몰랐다.</p>
 <p>Q: 크롤 버짓이 뭐길래, 그게 줄어들면 실제로 뭔가 달라져?</p>
 <p>A: 구글 봇이 하루에 네 사이트에서 가져갈 수 있는 데이터 허용량이야. 정확히는 "크롤 속도 제한(crawl rate limit)"과 "크롤 수요(crawl demand)"의 곱으로 결정되는데, 페이지 5,000개 미만이면 거의 신경 안 써도 되는 수준이다. 문제는 그 기준을 훌쩍 넘긴 순간부터, 네 사이트 전체가 봇한테 하나의 뷔페처럼 보이기 시작한다는 거야. 메뉴판을 다 안 읽고 디저트 쪽으로만 가는 거지.</p>
 <p>Q: 그러면 실제로 봇이 오는지, 안 오는지 어떻게 확인해?</p>
@@ -39,7 +39,7 @@
 <p>크롤링 통계 탭에서 "시간별 요청" 그래프를 확인해봐. 특정 시간대에 급락하면 서버가 크롤 요청을 거부하고 있는 거고, 특정 경로만 집중 찍히면 나머지는 외면당하고 있다는 뜻이다. Screaming Frog로 4xx, 5xx 응답 페이지를 전수 조사하는 것도 필수인데, 생각보다 빈칸이 많아. 네가 만든 페이지 300개 중 404 뜨는 게 30개는 기본이야. 그 30개가 네 크롤 버짓에서 차지하는 비중, 무시하면 안 돼.</p>
 <p>그리고 PBN 같은 외부 백링크를 쓸 때도 크롤링 패턴이 바뀌거든. 갑자기 링크가 폭증하면 구글 봇은 네 사이트 중요도를 재평가한다. <a href="https://pbn-builder.xyz/" target="_blank" rel="noopener noreferrer">PBN 빌더 자동 백링크 프로그램 분양</a> 같은 자동화 도구 쓸 때도 이 점 감안해야 해. 한꺼번에 쏟아지면 오히려 의심받아.</p>
 <p>가장 피해야 할 건 "크롤링 문제를 콘텐츠 양으로 덮으려는 시도"야. 페이지 수를 2배로 늘리면 봇이 더 자주 올 거라 착각하지 마. 서버가 느리고 중복 URL이 넘치고 응답 에러가 잦은 상태에서 페이지를 더 만들면, 넌 봇한테 더 많은 쓰레기를 던져주는 셈이야. 결국 봇은 널 외면하고, 네 사이트 존재 자체가 구글한테 잡음이 돼. 그 잡음의 결과는 네 은행 잔고가 가장 먼저 알려줄 테니까.</p>
-    </article>
-  </main>
+ </article>
+ </main>
 </body>
 </html>
