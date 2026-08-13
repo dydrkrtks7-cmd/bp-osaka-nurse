@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>글 목록 (4/4) · osaka-nurse</title>
+  <meta name="description" content="osaka-nurse에 올라온 글 목록입니다.">
+  <link rel="canonical" href="https://nurse-kyujin.online/posts-4.html">
+  <link rel="icon" type="image/svg+xml" href="favicon.svg">
+  <style>
+ :root {
+ --bg-white: #ffffff;
+ --bg-light: #f8fafc;
+ --text-charcoal: #0f172a;
+ --text-slate: #475569;
+ --accent-blue: #0284c7;
+ --accent-red: #ef4444;
+ --border-thin: #e2e8f0;
+ --font-swiss: 'Outfit', 'Inter', sans-serif;
+ --font-kr: 'Noto Sans KR', sans-serif;
+ }
+
+ * {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ }
+
+ body {
+ background-color: var(--bg-white);
+ color: var(--text-charcoal);
+ font-family: var(--font-swiss), var(--font-kr);
+ line-height: 1.7;
+ letter-spacing: -0.01em;
+ }
+
+ .container {
+ max-width: 960px;
+ margin: 0 auto;
+ padding: 0 40px;
+ }
+
+ /* Swiss Minimal Grid Layout Header */
+ header {
+ border-bottom: 0.5px solid var(--text-charcoal);
+ padding: 30px 0;
+ background: var(--bg-white);
+ }
+
+ .nav-wrap {
+ display: flex;
+ justify-content: space-between;
+ align-items: center;
+ }
+
+ .logo {
+ font-weight: 800;
+ font-size: 1.1rem;
+ letter-spacing: -0.03em;
+ color: var(--text-charcoal);
+ text-decoration: none;
+ display: flex;
+ align-items: center;
+ gap: 6px;
+ }
+
+ .logo::before {
+ content: '';
+ display: inline-block;
+ width: 10px; height: 10px;
+ background: var(--accent-red);
+ }
+
+ nav {
+ display: flex;
+ gap: 40px;
+ }
+
+ nav a {
+ color: var(--text-slate);
+ text-decoration: none;
+ font-size: 0.82rem;
+ font-weight: 600;
+ transition: color 0.2s;
+ }
+
+ nav a:hover {
+ color: var(--text-charcoal);
+ }
+
+ /* Hero */
+ .hero {
+ padding: 100px 0 60px 0;
+ border-bottom: 0.5px solid var(--text-charcoal);
+ }
+
+ .swiss-code {
+ font-family: monospace;
+ font-size: 0.72rem;
+ color: var(--accent-blue);
+ text-transform: uppercase;
+ margin-bottom: 20px;
+ letter-spacing: 0.1em;
+ font-weight: 700;
+ }
+
+ h1 {
+ font-size: clamp(2.2rem, 6vw, 3.6rem);
+ font-weight: 800;
+ line-height: 1.1;
+ letter-spacing: -0.04em;
+ color: var(--text-charcoal);
+ margin-bottom: 30px;
+ }
+
+ h1 span {
+ color: var(--accent-blue);
+ }
+
+ .hero-meta {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: 50px;
+ margin-top: 40px;
+ }
+
+ .hero-desc {
+ font-size: 1rem;
+ color: var(--text-slate);
+ font-weight: 300;
+ }
+
+ .btn-minimal {
+ display: inline-block;
+ border: 0.5px solid var(--text-charcoal);
+ color: var(--text-charcoal);
+ padding: 12px 30px;
+ text-decoration: none;
+ font-size: 0.8rem;
+ font-weight: 600;
+ text-align: center;
+ transition: all 0.3s;
+ }
+
+ .btn-minimal:hover {
+ background: var(--text-charcoal);
+ color: var(--bg-white);
+ }
+
+ /* Chart Section */
+ .section {
+ padding: 80px 0;
+ border-bottom: 0.5px solid var(--border-thin);
+ }
+
+ .section.dark {
+ background-color: var(--bg-light);
+ border-bottom: 0.5px solid var(--text-charcoal);
+ }
+
+ .grid-vitals {
+ display: grid;
+ grid-template-columns: repeat(4, 1fr);
+ gap: 1px;
+ background-color: var(--border-thin);
+ border: 0.5px solid var(--border-thin);
+ margin-top: 40px;
+ }
+
+ .vital-box {
+ background-color: var(--bg-white);
+ padding: 30px;
+ text-align: left;
+ }
+
+ .vital-num {
+ font-size: 2.2rem;
+ font-weight: 800;
+ color: var(--text-charcoal);
+ line-height: 1.1;
+ }
+
+ .vital-title {
+ font-size: 0.72rem;
+ text-transform: uppercase;
+ font-weight: 600;
+ color: var(--text-slate);
+ margin-top: 10px;
+ }
+
+ /* Protocols / Services Table */
+ .protocol-table {
+ width: 100%;
+ border-collapse: collapse;
+ margin-top: 40px;
+ }
+
+ .protocol-table th {
+ text-align: left;
+ font-size: 0.75rem;
+ text-transform: uppercase;
+ font-weight: 600;
+ color: var(--text-slate);
+ padding: 15px 0;
+ border-bottom: 1.5px solid var(--text-charcoal);
+ }
+
+ .protocol-table td {
+ padding: 20px 0;
+ border-bottom: 0.5px solid var(--border-thin);
+ font-size: 0.88rem;
+ }
+
+ .protocol-title {
+ font-weight: 600;
+ color: var(--text-charcoal);
+ }
+
+ .protocol-desc {
+ color: var(--text-slate);
+ font-weight: 300;
+ }
+
+ /* Pricing Plans */
+ .price-grid {
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+ gap: 40px;
+ margin-top: 40px;
+ }
+
+ .price-box {
+ border: 0.5px solid var(--border-thin);
+ padding: 45px;
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ }
+
+ .price-box.premium {
+ border-color: var(--text-charcoal);
+ }
+
+ .price-header {
+ margin-bottom: 30px;
+ }
+
+ .price-header h3 {
+ font-size: 1.4rem;
+ font-weight: 800;
+ margin-bottom: 10px;
+ }
+
+ .price-val {
+ font-size: 2.2rem;
+ font-weight: 800;
+ color: var(--accent-blue);
+ }
+
+ .price-list {
+ list-style: none;
+ margin-bottom: 40px;
+ font-size: 0.84rem;
+ color: var(--text-slate);
+ }
+
+ .price-list li {
+ margin-bottom: 10px;
+ display: flex;
+ align-items: center;
+ gap: 8px;
+ }
+
+ .price-list li::before {
+ content: '';
+ display: inline-block;
+ width: 4px; height: 4px;
+ background: var(--accent-red);
+ }
+
+ /* Footer */
+ footer {
+ padding: 80px 0 50px 0;
+ text-align: left;
+ font-size: 0.72rem;
+ color: var(--text-slate);
+ }
+
+ .footer-grid {
+ display: grid;
+ grid-template-columns: 2fr 1fr;
+ gap: 100px;
+ border-top: 0.5px solid var(--border-thin);
+ padding-top: 40px;
+ }
+
+ .footer-links a {
+ color: var(--text-charcoal);
+ text-decoration: none;
+ font-weight: 600;
+ margin-right: 15px;
+ }
+
+ @media (max-width: 768px) {
+ .hero-meta { grid-template-columns: 1fr; gap: 20px; }
+ .grid-vitals { grid-template-columns: 1fr 1fr; }
+ .price-grid { grid-template-columns: 1fr; }
+ .footer-grid { grid-template-columns: 1fr; gap: 40px; }
+ nav { display: none; }
+ }
+ </style>
+  <meta property="og:title" content="글 목록 (4/4) · osaka-nurse">
+  <meta property="og:description" content="osaka-nurse에 올라온 글 목록입니다.">
+  <meta property="og:url" content="https://nurse-kyujin.online/posts-4.html">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary">
+</head>
+<body>
+  <div class="container">
+    <header>
+ <div class="container nav-wrap">
+ <a href="/" class="logo">OSAKA NURSE</a>
+ <nav>
+ <a href="#vitals">vitals</a>
+ <a href="#protocols">nursing routine</a>
+ <a href="#pricing">pricing</a>
+ </nav>
+ </div>
+ </header>
+    <main>
+      <h1>글 목록</h1>
+      <p>전체 79개 · 4/4 페이지</p>
+      <ul class="post-list">
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-005-k9ao7.html">알리익스프레스 유니콘 한 마리가 블레이드 러너 엔딩을 뒤집은 이야기</a>
+        <p class="post-item__summary">1982년 블레이드 러너 촬영 현장에서 소품 담당 팀이 유니콘 종이접기 소품을 대량 구매한 기록이 남아 있다. 1장당 0.3센트. LA 한국타운 근처 도매상에서 박스 단위로 샀는데, 이유는 단순했다</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/myth-005-z9pp9s.html">어차피 당신 사이트도 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호 안 하면 3일 만에 상점 폐쇄될 운명입니다만 😭</a>
+        <p class="post-item__summary">2023년 11월 14일 새벽 3시, 마포구 신수동의 한 차가운 공유 오피스 구석자리에서 내 스팀 대시보드의 '판매 중단' 버튼을 누르던 순간, 모니터에는 빌드 오류 코드 `0x80070005`가 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-16xhv17.html">가게 주인이 절대 알려주지 않는 룸 단위 마진의 더러운 비밀, 월세 300과 700의 차이</a>
+        <p class="post-item__summary">룸 단위로 운영되는 가게에서 진짜 돈이 되는 시간대는 언제일 거 같아요? 대부분 저녁 피크타임이라고 생각하겠죠. 근데 제가 작년에 단골로 드나들던 홍대 2번 출구 쪽 노래연습장 사장님은 오후 2시에</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-1nf6ix3.html">서버 터지는 줄 알았지? 구글 봇이 당신 사이트를 싫어하는 진짜 이유</a>
+        <p class="post-item__summary">주말에 룸방에서 친구들이랑 술 마시는데, 나만 몰래 계산기를 두드리고 있었다. 기가 막힌 건 친구 놈이 시킨 18만원짜리 양주 세트였다. 다들 분위기 좋다고 한 잔씩 하는데, 나는 그 병의 원가가 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-1o6mdgt.html">네 robots.txt 만진다고 구글이 네 사이트 더 긁어주진 않아</a>
+        <p class="post-item__summary">2023년 8월, 서울 강남구 역삼동모 대행사 회의실에서 나는 한 중견 쇼핑몰 담당자에게 말했다. &quot;크롤링 에러율이 23%인데 뭐 하신 겁니까.&quot; 그는 대답 대신 구글 서치콘솔 스크린샷을 보여줬다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-1pjfx4g.html">구글 봇이 안 보는 페이지가 있는데Você는 그걸 모르고 있잖아요</a>
+        <p class="post-item__summary">어느 날 클라이언트 서버 로그를 뒤지는데, 구글бот이 28,000개 중 6,400개 URL을 아예 스킵하고 있더라고요. 그 사이트 운영자는 &quot;우리 SEO 잘 하고 있다&quot;고 확신하고 있었지만, 크롤</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-1ttyyag.html">robots.txt 내의 crawl</a>
+        <p class="post-item__summary">대부분의 관리자가 간과하는 부분이다. 구글 봇은 로봇 배제 표준의 일환인 크롤 지연 설정을 무시한다. 과거 야후나 빙 같은 검색 엔진이 이 지시어를 존중하던 시절의 관습이 웹 표준인 양 굳어진 탓이</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-icuoq.html">크롤 버짓 다 태운 뒤에야 깨달은 것, 봇은 네 글 따윈 읽지 않는다</a>
+        <p class="post-item__summary">월 유입 12만이던 사이트가 3개월 만에 4만대로 꺾였을 때, 나는 서치콘솔의 색인 생성 오류 보고서부터 열었다. 거기엔 중복 파라미터 URL이 1,200개 쌓여 있었고, 정작 내가 공들여 만든 핵</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-uciyzo.html">구글 봇이 문을 두드릴 때, 당신은 몇 층에 숨어 있었나요?</a>
+        <p class="post-item__summary">어제 밤, 서버 로그를 들여다보다가 묘한 허무감이 밀려왔습니다. 얼마나 공들여 쌓아 올린 콘텐츠인데, 정작 구글 봇이라는 손님은 현관문 앞까지 와서 발길을 돌렸더군요. 마치 건축법 위반인 줄 알면서</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-001-ufpsoh.html">구글이 우리 아이 장난감 로트를 추적하는 방식과 당신의 크롤 예산이 낭비되는 순간</a>
+        <p class="post-item__summary">어차피 다 똑같은 플라스틱 조각인데, 왜 유럽 내수용은 안전하고 한국에 들어온 건 문제투성이인지 알면 뭐 합니까. 그래도 돈 받은 김에, 수입상 입장에서 본 그 끔찍한 2022 년 리콜 사건의 이면</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-10t7w6o.html">이미지 맵과 크롤 버짓 낭비의 상관관계</a>
+        <p class="post-item__summary">사이트 내에서 클릭 가능한 영역을 분할해 보여주는 이미지 맵은 구글 봇에게 상당히 불친절한 구조다. 요즘은 거의 쓰지 않는 기술이지만 여전히 낡은 템플릿을 고수하는 사이트들이 있다. 이 방식은 구글</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-17apuqz.html">홍대 폐업 업소 메뉴 원가 역산해보니 다 이유가 있더라고요</a>
+        <p class="post-item__summary">홍대 서교동 골목 이면도로에 있는 15㎡짜리 분식집. 내가 원래 단골이었던 곳이 올해 초에 문을 닫았거든. 그 전 주인이 친한 형이 아니라서, 폐업 사유를 직접 물어볼 수도 없었다. 그래서 남은 건</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-002-1te78q6.html">소아과 차트 뒤에 숨겨진 분유 DHA 함량 조작과 아이의 배앓이 연관성</a>
+        <p class="post-item__summary">2023 년 3 월, 진료실 창밖으로 비가 내리던 오후였습니다. 한 어머니가 가져온 분유통을 보니, 알 수 없는 이유로 아이의 변 색깔이 계속 녹색을 띠고 있었죠. 대부분은 &quot;아이 체질 문제&quot;라고 </p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-003-1idljn8.html">리셀러 눈에 띄는 스티치</a>
+        <p class="post-item__summary">2003년 파리 에디션은 실제 샘플을 30×30mm 구역에 13.2스티치/인치, 2021 레트로는 11.5스티치/인치 정도가 평균이다. 이 차이는 겉감 두께와 내구성에 직접 연결돼, 한 번이라도 미</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-003-1q3fs5f.html">구글 봇을 위한 크롤러 케어의 핵심과 크롤 버짓 관리 전략</a>
+        <p class="post-item__summary">검색 엔진 최적화의 첫걸음은 웹사이트가 검색 로봇에게 얼마나 친화적인지 확인하는 것에서 시작합니다. 구글 봇은 매일 수많은 페이지를 방문하며 정보를 수집하는데, 이때 사이트의 구조가 복잡하거나 불필</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-004-1x5smkr.html">박스 한 장이 40%를 잡아먹는세계</a>
+        <p class="post-item__summary">2023년 7월, 한 리셀러가 카톡으로 말했어. &quot;이 인솔 로고 미묘하게 다르다, 2021년이랑.&quot; 그 한마디가 커뮤니티를 뒤집어놨고, 나는 그걸 지켜보면서 같은 실수를 반복하고 있었다.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-004-i12gmx.html">어차피 아무도 안 믿겠지만 써보는, 사라진 슬라이드 7장과 쓸데없이 낭비되는 리소스에 대한 이야기</a>
+        <p class="post-item__summary">서버실 구석 랙에서 발견한 2013년 6월자 기밀 PDF 파일의 7페이지는 처음부터 공백이 아니었습니다. 솔직히 말해서 이런 해묵은 기밀 유출 문서를 다시 들여다본다고 제 통장 잔고가 극적으로 늘어</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-005-19htkeb.html">크롤 버짓은 다이어트가 아니라 굶주림이다</a>
+        <p class="post-item__summary">2024년 12월 중순, 서치콘솔의 크롤 통계 탭에서 일일 평균 크롤링 페이지 수가 4,200에서 1,100으로 떨어진 걸 확인한 순간이 있었다. 딱히 작업한 것도 없었는데.</p>
+      </li>
+      <li class="post-item">
+        <a class="post-item__link" href="posts/qa-005-u5sl6s.html">구글 봇, 이젠 하다하다 권리금 내역까지 뒤지는 건가요? (어차피 크롤 버짓은 한정적일 텐데)</a>
+        <p class="post-item__summary">그 가게, 권리금 2억</p>
+      </li>
+      </ul>
+    <nav class="pager">
+      <a class="pager__link" href="posts.html">1</a>
+      <a class="pager__link" href="posts-2.html">2</a>
+      <a class="pager__link" href="posts-3.html">3</a>
+      <span class="pager__current">4</span>
+    </nav>
+    </main>
+  </div>
+</body>
+</html>
