@@ -57,7 +57,12 @@ footer{background:var(--bg2);border-top:1px solid var(--border);padding:32px 5% 
 <style id="reader-recovery-style">[data-reader-recovery]{overflow-wrap:anywhere}[data-reader-recovery] .reader-table-scroll{max-width:100%;overflow-x:auto;margin:20px 0}[data-reader-recovery] table{border-collapse:collapse;width:100%;min-width:520px}[data-reader-recovery] td,[data-reader-recovery] th{border:1px solid currentColor;padding:10px;text-align:left;vertical-align:top}[data-reader-recovery] nav{margin:12px 0;font-size:.9em}[data-reader-recovery] .reader-summary{border-left:3px solid currentColor;padding-left:14px}[data-reader-recovery] .reader-faq{margin-top:32px}[data-reader-recovery] .reader-reference{font-size:.85em;opacity:.85;margin-top:24px}</style>
 <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"작은 블로그인데도 구글봇이 잘 안 오는 이유가 크롤 버짓이 부족해서인가요?","acceptedAnswer":{"@type":"Answer","text":"아닙니다. 소규모 사이트의 경우 물리적인 크롤링 자원(Crawl Budget) 자체가 부족한 경우는 드뭅니다. 소규모 사이트의 미색인을 기술적 결함 하나로만 단정할 수는 없습니다. 다만 서버 탓을 하기 전에 404 에러 누적, robots.txt 차단 실수, 사이트맵과 정본(canonical) 주소의 불일치 같은 기초적인 탐색 경로 오류가 없는지 우선 확인해보는 것이 순서입니다."}},{"@type":"Question","name":"중복 URL을 정리하기 위해 서치 콘솔의 URL 제거 도구를 쓰면 되나요?","acceptedAnswer":{"@type":"Answer","text":"절대 안 됩니다. URL 제거 도구는 일시적으로 검색 결과에서 긴급하게 페이지를 숨기는 임시 도구일 뿐입니다. 중복 주소를 해결하려면 HTML 소스 내의 canonical(정본) 태그를 통일하고, XML 사이트맵 및 실제 내부 링크(href) 주소를 삼위일체로 일치시켜야 합니다."}}]}</script>
   <meta property="og:url" content="https://nurse-kyujin.online/post2.html">
-  <meta property="og:title" content="구글봇 자원 배분 최적화: 정밀 관찰과 제어">
+<style data-post-index-reader-style="true">
+div[data-post-index-navigation="true"] { display:block !important; visibility:visible !important; padding:12px 20px; text-align:right; }
+div[data-post-index-navigation="true"] a { display:inline-flex !important; visibility:visible !important; align-items:center; padding:8px 14px; border:1px solid currentColor; border-radius:6px; color:inherit; text-decoration:none; }
+nav.pager, nav.post-pager, nav[data-site-documents="true"] { display:flex !important; visibility:visible !important; flex-wrap:wrap; gap:12px; padding:16px 0; }
+nav.pager a, nav.post-pager a, nav[data-site-documents="true"] a { display:inline-flex !important; visibility:visible !important; align-items:center; padding:6px 10px; color:inherit; }
+</style>  <meta property="og:title" content="구글봇 자원 배분 최적화: 정밀 관찰과 제어">
   <meta property="og:description" content="소규모 사이트의 크롤링 누수를 진단하기 위해 서버 사양을 의심하기 전 404/5xx 에러, robots.txt, 정본 URL 선언, 실제 a 태그 링크 구현 여부를 조건별로 점검하는 실무적인 가이드라인을 제공합니다.">
   <meta property="og:type" content="website">
   <meta name="twitter:card" content="summary">

@@ -309,6 +309,12 @@
  nav { display: none; }
  }
  </style>
+  <style data-post-index-reader-style="true">
+div[data-post-index-navigation="true"] { display:block !important; visibility:visible !important; padding:12px 20px; text-align:right; }
+div[data-post-index-navigation="true"] a { display:inline-flex !important; visibility:visible !important; align-items:center; padding:8px 14px; border:1px solid currentColor; border-radius:6px; color:inherit; text-decoration:none; }
+nav.pager, nav.post-pager, nav[data-site-documents="true"] { display:flex !important; visibility:visible !important; flex-wrap:wrap; gap:12px; padding:16px 0; }
+nav.pager a, nav.post-pager a, nav[data-site-documents="true"] a { display:inline-flex !important; visibility:visible !important; align-items:center; padding:6px 10px; color:inherit; }
+</style>
   <meta property="og:title" content="글 목록 (1/4) · 구글 봇 정밀 검진 및 크롤 버짓 밀착 간호">
   <meta property="og:description" content="구글 봇 정밀 검진 및 크롤 버짓 밀착 간호에 올라온 글 목록입니다.">
   <meta property="og:url" content="https://nurse-kyujin.online/posts.html">
@@ -330,6 +336,7 @@
     <main>
       <h1>글 목록</h1>
       <p>전체 73개 · 1/4 페이지</p>
+      <nav data-site-documents="true" aria-label="사이트 문서" style="display:flex;flex-wrap:wrap;gap:12px;padding:16px 0"><a href="about.html">크롤러 케어 소개</a></nav>
       <ul class="post-list">
       <li class="post-item">
         <a class="post-item__link" href="post1.html">크롤 버짓 건강검진: 내 사이트는 몇 점?</a>
@@ -348,8 +355,8 @@
         <p class="post-item__summary">월 매출 3,000만원을 기록했을 때 실제 현금 흐름은 1,200만원 정도가 고정비에 잠식된다. 나는 그때 10% 마진을 기대했지만, 실제 순이익은 3% 미만에 불과했다.</p>
       </li>
       <li class="post-item">
-        <a class="post-item__link" href="posts/field_note-001-n9jz5e.html">구글 봇 정밀 검진과 크롤 버짓 밀착 간호 안내</a>
-        <p class="post-item__summary">검색 엔진은 사이트를 단순히 색인하는 데서 그치지 않고, 페이지 구조와 내부 링크, 메타 정보까지 끊임없이 들여다봅니다. 그 과정에서 발생하는 미세한 오류나 비효율을 잡아내는 작업이 바로 크롤러 케</p>
+        <a class="post-item__link" href="posts/field_note-001-n9jz5e.html">크롤러 케어 기록, 지금 열리는 화면과 저장된 크롤은 다르다</a>
+        <p class="post-item__summary">브라우저 화면과 구글봇 수집 데이터의 차이를 짚어내고, 검색봇 정밀 검진 시 필요한 전후 관측 항목과 상태 기록 매뉴얼을 다룹니다.</p>
       </li>
       <li class="post-item">
         <a class="post-item__link" href="posts/field_note-002-is4g2s.html">인솔 하나 바뀌었다고 리셀가 40% 날아가는 세상, 난 이미 두 번 당했다</a>
